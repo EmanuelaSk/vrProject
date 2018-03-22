@@ -5,17 +5,14 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
 
-    CapsuleCollider plBody;
-    // Use this for initialization
-    //GoldPickup treasure;
+
     int scoreValue = 15;
     bool score = false;
 
     void Awake()
     {
 
-        plBody = GetComponent<CapsuleCollider>();
-        //   GoldPickup treasure = treasure.GetComponent<Collider>();
+       
 
     }
 

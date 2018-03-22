@@ -311,17 +311,16 @@
     <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\_Scripts\cameraController.cs" />
     <Compile Include="Assets\_Scripts\FirstPersonController.cs" />
-    <Compile Include="Assets\_Scripts\GoldPickup.cs" />
     <Compile Include="Assets\_Scripts\MouseLook.cs" />
+    <Compile Include="Assets\_Scripts\PauseMenuScript.cs" />
     <Compile Include="Assets\_Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\_Scripts\PlayerUIScript.cs" />
+    <Compile Include="Assets\_Scripts\ReticleTest.cs" />
     <Compile Include="Assets\_Scripts\SceneChange.cs" />
     <Compile Include="Assets\_Scripts\ScoreManager.cs" />
     <Compile Include="Assets\_Scripts\SettingsScript.cs" />
-    <Compile Include="Assets\PauseMenuScript.cs" />
-    <Compile Include="Assets\PlayerUIScript.cs" />
-    <Compile Include="Assets\ReticleTest.cs" />
-    <Compile Include="Assets\TimerScript.cs" />
+    <Compile Include="Assets\_Scripts\TimerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
