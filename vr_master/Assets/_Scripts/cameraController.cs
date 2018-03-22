@@ -43,7 +43,7 @@ public class cameraController : MonoBehaviour {
             Debug.Log("switching cam's"); 
             }
         else if (Input.GetKeyUp(KeyCode.A)){ 
-                currCamIndex = currCamIndex;
+               // currCamIndex = currCamIndex;
             
         }
         if (currCamIndex < theCams.Capacity)

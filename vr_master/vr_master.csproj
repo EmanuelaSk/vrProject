@@ -184,6 +184,9 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -211,6 +214,9 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Tech/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -225,10 +231,96 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Cardboard\GvrReticlePointer.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\ArmModel\GvrArmModel.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\ArmModel\GvrBaseArmModel.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\ArmModel\IGvrArmModelReceiver.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\GvrControllerInput.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\GvrControllerReticleVisual.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\GvrControllerVisual.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\GvrLaserPointer.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\GvrLaserVisual.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\GvrRecenterOnlyController.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\GvrTrackedController.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\ControllerProviderFactory.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\ControllerProviders\AndroidNativeControllerProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\ControllerProviders\DummyControllerProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\ControllerProviders\EditorControllerProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\ControllerProviders\EmulatorControllerProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\ControllerProviders\MouseControllerProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\ControllerState.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\Emulator\EmulatorClientSocket.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\Emulator\EmulatorConfig.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\Emulator\EmulatorDataTypes.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\Emulator\EmulatorManager.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\Emulator\PhoneEvent.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Internal\IControllerProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Tooltips\GvrControllerTooltipsSimple.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\Tooltips\GvrTooltip.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\GvrBasePointer.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\GvrBasePointerRaycaster.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\GvrEventInterfacesExtension.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\GvrExecuteEventsExtension.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\GvrPointerGraphicRaycaster.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\GvrPointerPhysicsRaycaster.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\GvrPointerScrollInput.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\GvrScrollSettings.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\IGvrScrollSettings.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\InputModule\GvrAllEventsTrigger.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\InputModule\GvrEventExecutor.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\InputModule\GvrPointerInputModule.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\InputModule\GvrPointerInputModuleImpl.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\InputModule\IGvrEventExecutor.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\EventSystem\InputModule\IGvrInputModuleController.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\GvrCardboardHelpers.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\GvrEditorEmulator.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\GvrSettings.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\GvrUnitySdkVersion.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\GvrHeadset.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\GvrHeadsetEnums.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\Internal\HeadsetProviderFactory.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\Internal\HeadsetProviders\AndroidNativeHeadsetEnums.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\Internal\HeadsetProviders\AndroidNativeHeadsetProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\Internal\HeadsetProviders\DummyHeadsetProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\Internal\HeadsetProviders\EditorHeadsetProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\Internal\HeadsetState.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Headset\Internal\IHeadsetProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\InstantPreview\InstantPreview.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\InstantPreview\InstantPreviewControllerProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\InstantPreview\InstantPreviewHelper.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\GvrKeyboard.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\GvrKeyboardDelegateBase.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\GvrKeyboardIntent.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\Internal\IKeyboardProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\Internal\KeyboardProviderFactory.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\Internal\KeyboardProviders\AndroidNativeKeyboardProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\Internal\KeyboardProviders\DummyKeyboardProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\Internal\KeyboardProviders\EmulatorKeyboardProvider.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Keyboard\Internal\KeyboardState.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Permissions\GvrPermissionsRequester.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Pose3D.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\PropertyDrawers\GvrInfoDrawer.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\UI\GvrDropdown.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Utilities\GvrActivityHelper.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Utilities\GvrCursorHelper.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Utilities\GvrDaydreamApi.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Utilities\GvrIntent.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Utilities\GvrMathHelpers.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Utilities\GvrUIHelpers.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Utilities\GvrVRHelpers.cs" />
+    <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\_Scripts\cameraController.cs" />
+    <Compile Include="Assets\_Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\_Scripts\MouseLook.cs" />
+    <Compile Include="Assets\_Scripts\PauseMenuScript.cs" />
+    <Compile Include="Assets\_Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\_Scripts\PlayerUIScript.cs" />
+    <Compile Include="Assets\_Scripts\ReticleTest.cs" />
     <Compile Include="Assets\_Scripts\SceneChange.cs" />
+    <Compile Include="Assets\_Scripts\ScoreManager.cs" />
     <Compile Include="Assets\_Scripts\SettingsScript.cs" />
+    <Compile Include="Assets\_Scripts\TimerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

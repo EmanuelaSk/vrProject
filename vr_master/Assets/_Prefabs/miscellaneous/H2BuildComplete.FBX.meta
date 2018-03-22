@@ -3,7 +3,7 @@ guid: 3b853929c6b57404d929ccb1dcba536b
 timeCreated: 1520295269
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: 16302-A200.dwg
     100002: Block:*U12
@@ -2384,6 +2384,9 @@ ModelImporter:
     104752: Walls
     104754: Walls001
     104756: Walls002
+    104758: Box193_MeshPart0
+    104760: Box193_MeshPart1
+    104762: Box193_MeshPart2
     400000: 16302-A200.dwg
     400002: Block:*U12
     400004: Block:*U21
@@ -4763,6 +4766,9 @@ ModelImporter:
     404752: Walls
     404754: Walls001
     404756: Walls002
+    404758: Box193_MeshPart0
+    404760: Box193_MeshPart1
+    404762: Box193_MeshPart2
     2100000: No Name
     2300000: Box002
     2300002: Box003
@@ -6034,6 +6040,9 @@ ModelImporter:
     2302534: Walls
     2302536: Walls001
     2302538: Walls002
+    2302540: Box193_MeshPart0
+    2302542: Box193_MeshPart1
+    2302544: Box193_MeshPart2
     3300000: Box002
     3300002: Box003
     3300004: Box005
@@ -7304,6 +7313,9 @@ ModelImporter:
     3302534: Walls
     3302536: Walls001
     3302538: Walls002
+    3302540: Box193_MeshPart0
+    3302542: Box193_MeshPart1
+    3302544: Box193_MeshPart2
     4300000: Layer:ZZ-LINE-CONS
     4300002: Layer:A-N-GEN-TXT
     4300004: Layer:A-N-GEN-TXT
@@ -7868,13 +7880,14 @@ ModelImporter:
     4301122: PivotDoor066
     4301124: PivotDoor065
     4301126: PivotDoor092
+    4301128: Box193_MeshPart0
+    4301130: Box193_MeshPart1
+    4301132: Box193_MeshPart2
     9500000: //RootNode
-  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -7887,7 +7900,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -7912,8 +7924,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
