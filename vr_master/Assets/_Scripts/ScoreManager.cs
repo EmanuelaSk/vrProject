@@ -6,17 +6,13 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static int score;        // The player's score.
-
-    
-   public Text text;                      // Reference to the Text component.
+    public Transform canvasWin;
+    public Text text;                      // Reference to the Text component.
+ 
 
 
     void Awake()
     {
-        // Set up the reference.
-       // text = GetComponent<Text>();
-
-        // Reset the score.
         score = 0;
     }
 
@@ -25,5 +21,21 @@ public class ScoreManager : MonoBehaviour
     {
         // Set the displayed text to be the word "Score" followed by the score value.
         text.text = "Score: " + score;
+        winCondition();
+
+    }
+
+    void winCondition()
+    {
+        if (score >= 45)
+        {
+            //PauseMenuScript.pauseGame = true;
+
+            canvasWin.gameObject.SetActive(true);
+ 
+        }
     }
 }
+
+
+
