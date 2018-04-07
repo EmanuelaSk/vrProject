@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 04b49182b2b84cf448517eb1211be8d4
+timeCreated: 1523057578
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Katamari Serif
+  fontNames:
+  - Katamari Serif
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
