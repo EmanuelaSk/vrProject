@@ -63,9 +63,11 @@ public class TimerScript : MonoBehaviour {
 	public void FinishedCount() {
 		Debug.Log("Timer End");
 		counterText.text = "00:00";
-		usingTimer = false;
-		canvasLose.gameObject.SetActive (true);
-		Time.timeScale = 0;
 		PauseMenuScript.pauseGame = true;
+		usingTimer = false;
+
+		//Time.timeScale = 0;
+
+		canvasLose.gameObject.SetActive (true);
 	}
 }

@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Prefabs\Clip.cs" />
      <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Cardboard\GvrReticlePointer.cs" />
      <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\ArmModel\GvrArmModel.cs" />
      <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Controller\ArmModel\GvrBaseArmModel.cs" />
@@ -131,6 +130,8 @@
      <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Utilities\GvrVRHelpers.cs" />
      <Compile Include="Assets\_Scripts\addedPlayer\Scripts\Video\GvrVideoPlayerTexture.cs" />
      <Compile Include="Assets\_Scripts\cameraController.cs" />
+     <Compile Include="Assets\_Scripts\Clip.cs" />
+     <Compile Include="Assets\_Scripts\DynamicWaypointSeek.cs" />
      <Compile Include="Assets\_Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\_Scripts\MouseLook.cs" />
      <Compile Include="Assets\_Scripts\PauseMenuScript.cs" />
@@ -143,10 +144,9 @@
      <Compile Include="Assets\_Scripts\ScoreManager.cs" />
      <Compile Include="Assets\_Scripts\SettingsScript.cs" />
      <Compile Include="Assets\_Scripts\TimerScript.cs" />
-     <Compile Include="Assets\DynamicWaypointSeek.cs" />
-     <Compile Include="Assets\Models\Animation\Robber\PlayerBehavior.cs" />
-     <Compile Include="Assets\TurretScript.cs" />
-     <None Include="Assets\M9\Read_me.txt" />
+     <Compile Include="Assets\_Scripts\treasureCollision.cs" />
+     <Compile Include="Assets\_Scripts\TurretScript.cs" />
+     <Compile Include="Assets\Animations\Animation\Robber\PlayerBehavior.cs" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
@@ -175,7 +175,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/mateusz/Desktop/untitled folder/vrProject/VrMaster/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/mateusz/Desktop/vrProject-master 2/VrMaster/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/Users/mateusz/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>

@@ -28,7 +28,7 @@ public class PlayerShootingScript : MonoBehaviour {
     void Update ()
     {
 		Ammo.text = "Ammo " + ammoCount;
-	    bool hasAmmo = false;
+	  //  bool hasAmmo = false;
 		if (ammoCount != 0) {
 			
 			if (Input.GetButtonDown ("Fire1") && !shotFired) {

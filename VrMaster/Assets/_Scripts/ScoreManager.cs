@@ -7,13 +7,15 @@ public class ScoreManager : MonoBehaviour
 {
     public static int score;        // The player's score.
     public Transform canvasWin;
+	public Transform canvasLose;
     public Text text;                      // Reference to the Text component.
- 
+
+
 
 
     void Awake()
     {
-        score = 0;
+        
     }
 
 
@@ -35,6 +37,8 @@ public class ScoreManager : MonoBehaviour
  
         }
     }
+
+
 }
 
 

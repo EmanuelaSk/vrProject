@@ -116,7 +116,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/mateusz/Desktop/untitled folder/vrProject/VrMaster/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/mateusz/Desktop/vrProject-master 2/VrMaster/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/Users/mateusz/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
