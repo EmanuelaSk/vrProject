@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-
+	public GameObject loseCanvas; 
+	public GameObject winCanvas; 
 
     int scoreValue = 15;
     bool score = false;
-
+	int scoreInfo = 0;
     void Awake()
     {
 
@@ -18,9 +19,18 @@ public class PlayerCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
-        // Increase the score by the enemy's score value.
-        score = true;
+
+		if (other.tag == "Chest") {
+			Destroy (other.gameObject);
+			// Increase the score by the enemy's score value.
+			score = true;
+			scoreInfo += 15;
+		}
+
+		if (other.tag == "Cop") {
+			Time.timeScale = 0;
+			loseCanvas.SetActive(true);
+		}
     }
 
 
@@ -31,9 +41,14 @@ public class PlayerCollision : MonoBehaviour
             ScoreManager.score += scoreValue;
             score = false;
         }
+
+		if(scoreInfo == 90){
+			Time.timeScale = 0;
+			winCanvas.SetActive(true);
     }
 
 
+}
 }
 
     // Update is called once per frame

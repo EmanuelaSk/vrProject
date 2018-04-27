@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Waypoint
   - AmmoDrum
+  - Chest
+  - Cop
+  - Bullet
   layers:
   - Default
   - TransparentFX
